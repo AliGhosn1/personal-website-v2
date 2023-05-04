@@ -1,0 +1,36 @@
+.navigation-bar-container{
+    //backdrop-filter: blur(3px);
+    background-color: rgb(30, 31, 38, 0.4);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 15vh;
+    box-shadow: 0 4px 2px -2px rgb(30, 31, 38, 0.6);
+    overflow: hidden;
+    transition: height 0.1s ease-in;
+
+    .nav-bar-logo-container{
+        height: 90%;
+        width: 10%;
+        background-size: calc(100vh * 0.14) auto;
+        background-repeat: no-repeat;
+        background-position-x: 0;
+        background-position-y: 0;
+        margin-left: 20px;
+    }
+
+    .links-container{
+        display: flex;
+        text-align: center;
+        padding-right: 50px;
+        height: 100%;
+    }
+}
+
+.invisible-nav-bar{
+    height: 0;
+    transition: all 0.3s ease-in;
+}
+
