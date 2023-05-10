@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+
 import NavLink from "../navigation-link/navigation-link.component";
 
 import './navigation-bar.styles.scss'
@@ -14,6 +15,7 @@ const NavigationBar = () => {
         {linkPath: '/resume', title: 'RESUME'},
         {linkPath: '/contact', title: 'CONTACT ME'},
     ]
+
     const [displayNavBar, setDisplayNavBar] = useState(true);
 
     function vh(percent) {
@@ -25,7 +27,7 @@ const NavigationBar = () => {
         const handleScroll = () => {
             const position = window.pageYOffset;
     
-            if(position <= 50){
+            if(position <= vh(15)){
                 setDisplayNavBar(true);
             }
     
@@ -62,9 +64,11 @@ const NavigationBar = () => {
                 </div>
                 <div className="links-container">
                     {
-                        LINKS.map((link) => (<NavLink link={link} />))
+                        LINKS.map((link) => (<NavLink key={link.title} link={link}/>))
                     }
                 </div>
+            </div>
+            <div className="nav-bar-placeholder">
             </div>
         </div>
     )

@@ -4,12 +4,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { NavContextProvider } from './contexts/navigation-bar.context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <NavContextProvider>
+        <App />
+      </NavContextProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

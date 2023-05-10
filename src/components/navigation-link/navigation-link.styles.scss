@@ -13,7 +13,7 @@
         .link{
             color: white;
             text-decoration: none;
-            font-size: 15px;
+            font-size:20px;
             padding: 0 25px;
             padding-bottom: 10px;
             align-items: baseline;
@@ -25,23 +25,10 @@
             border-bottom: 3px solid white;
             transition: all 0.3s ease-in-out
         }
+
+        .active-link{
+            color: #21a987;
+            cursor: default;
+        }
     }
 }
-
-// .link{
-//     color: white;
-//     text-decoration: none;
-//     font-size: 15px;
-//     padding: 8px 20px;
-//     padding-bottom: 10px;
-//     align-items: baseline;
-//     border-top: 15px solid transparent;
-//     margin-top: -15px;
-// }
-
-// .link:hover{
-//     color: #21a987;
-//     transform: translateY(-10px);
-//     border-bottom: 3px solid white;
-//     transition: all 0.3s ease-in-out
-// }

@@ -150,18 +150,20 @@ const HomePage = () => {
             </canvas> 
             <div className='home-container'>
                 <table>
-                    <tr>
-                        <td colSpan={2}>
-                        <h1 class="link">
-                            <span class="link--top">Ali Ghosn</span>
-                            <span class="link--bottom">Ali Ghosn</span>
-                        </h1>
-                        </td>
-                    </tr>
-                    <tr className='homepage-table-buttons'>
-                        <td><HomePageButtonLeft to='/projects'>PROJECTS</HomePageButtonLeft></td>
-                        <td><HomePageButtonRight to='/resume'>RESUME</HomePageButtonRight></td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td colSpan={2}>
+                            <h1 className="link">
+                                <span className="link--top">Ali Ghosn</span>
+                                <span className="link--bottom">Ali Ghosn</span>
+                            </h1>
+                            </td>
+                        </tr>
+                        <tr className='homepage-table-buttons'>
+                            <td><HomePageButtonLeft to='/projects'>PROJECTS</HomePageButtonLeft></td>
+                            <td><HomePageButtonRight to='/about'>ABOUT ME</HomePageButtonRight></td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>
