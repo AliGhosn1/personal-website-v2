@@ -1,7 +1,8 @@
 import { useEffect, useRef } from 'react';
 
+import { HomePageButtonLeft, HomePageButtonRight } from '../home-button/home-button.styles';
+
 import './home-page.styles.scss'
-import homepageImage from '../../assets/pic.png'
 
 const HomePage = () => {
     const mainCanvas = useRef();
@@ -150,10 +151,16 @@ const HomePage = () => {
             <div className='home-container'>
                 <table>
                     <tr>
-                        <td><h1 className='title-name'>ALI GHOSN</h1></td>
+                        <td colSpan={2}>
+                        <h1 class="link">
+                            <span class="link--top">Ali Ghosn</span>
+                            <span class="link--bottom">Ali Ghosn</span>
+                        </h1>
+                        </td>
                     </tr>
-                    <tr>
-                        <td><img className='home-page-image' src={homepageImage}/></td>
+                    <tr className='homepage-table-buttons'>
+                        <td><HomePageButtonLeft to='/projects'>PROJECTS</HomePageButtonLeft></td>
+                        <td><HomePageButtonRight to='/resume'>RESUME</HomePageButtonRight></td>
                     </tr>
                 </table>
             </div>
