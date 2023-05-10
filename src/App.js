@@ -8,8 +8,8 @@ import './app.scss'
 function App() {
   return (
     <Routes>
+      <Route path="/" element={<Home />}/>
       <Route path="/" element={<Nav />}> 
-        <Route index element={<Home />}/>
         <Route path='projects' element={<Nav />}/>
         <Route path='about' element={<Nav />}/>
         <Route path='resume' element={<Nav />}/> 

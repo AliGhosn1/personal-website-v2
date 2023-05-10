@@ -21,31 +21,31 @@ const NavigationBar = () => {
         return (percent * h) / 100;
     }
 
-    const handleScroll = () => {
-        const position = window.pageYOffset;
-
-        if(position <= 50){
-            setDisplayNavBar(true);
-        }
-
-        else{
-            setDisplayNavBar(false);
-        }
-    };
-
-    const handleMouseMove = ({clientX, clientY}) => {
-        const distanceFromTop = clientY-window.pageYOffset;
-
-        if(vh(distanceFromTop) <= 0.2){
-            setDisplayNavBar(true);
-        }
-
-        else if(window.pageYOffset > 50){
-            setDisplayNavBar(false);
-        }
-    };
-
     useEffect(() => {
+        const handleScroll = () => {
+            const position = window.pageYOffset;
+    
+            if(position <= 50){
+                setDisplayNavBar(true);
+            }
+    
+            else{
+                setDisplayNavBar(false);
+            }
+        };
+    
+        const handleMouseMove = ({clientX, clientY}) => {
+            const distanceFromTop = clientY-window.pageYOffset;
+    
+            if(vh(distanceFromTop) <= 0.2){
+                setDisplayNavBar(true);
+            }
+    
+            else if(window.pageYOffset > 50){
+                setDisplayNavBar(false);
+            }
+        };
+        
         window.addEventListener('scroll', handleScroll, { passive: true });
         window.addEventListener('mousemove', handleMouseMove);
 

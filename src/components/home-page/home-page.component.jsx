@@ -1,23 +1,26 @@
 import { useEffect, useRef } from 'react';
+
 import './home-page.styles.scss'
+import homepageImage from '../../assets/pic.png'
 
 const HomePage = () => {
     const mainCanvas = useRef();
     useEffect(() => {
         class Particle {
-            constructor(x, y, directionX, directionY, size, color){
+            constructor(x, y, directionX, directionY, size, color, lineColor){
                 this.x = x;
                 this.y = y;
                 this.directionX = directionX;
                 this.directionY = directionY;
                 this.size = size;
                 this.color = color;
+                this.lineColor = lineColor;
             }
 
             draw(){
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
-                ctx.fillStyle = '#8C5523';
+                ctx.fillStyle = 'white';
                 ctx.fill();
             }
 
@@ -80,16 +83,19 @@ const HomePage = () => {
 
         function init(){
             particlesArray = [];
+            let colours = ['33, 169, 135,', '255, 50, 10']
+
             let numberOfParticles = (canvas.width * canvas.height)/20000;
             for(let i = 0; i< numberOfParticles; i++){
-                let size = (Math.random() * 5) + 1;
+                let size = (Math.random() * 2) + 1;
                 let x = (Math.random() * ((window.innerWidth - size * 2) - (size * 2)) + size * 2);
                 let y = (Math.random() * ((window.innerHeight - size * 2) - (size * 2)) + size * 2);
-                let directionX = (Math.random() * 5) - 2.5;
-                let directionY = (Math.random() * 5) - 2.5;
+                let directionX = (Math.random() * 2) - 1;
+                let directionY = (Math.random() * 2) - 1;
                 let color = '#8C5523';
+                let lineColor = colours[Math.floor(Math.random() * 2)];
 
-                particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
+                particlesArray.push(new Particle(x, y, directionX, directionY, size, color, lineColor));
             }  
         }
 
@@ -111,7 +117,7 @@ const HomePage = () => {
 
                     if(distance < (canvas.width/7) * (canvas.height/7)){
                         opacityValue = 1 - (distance/20000);
-                        ctx.strokeStyle = 'rgba(140, 85, 31, '+ opacityValue +')';
+                        ctx.strokeStyle = 'rgba('+ particlesArray[b].lineColor + opacityValue +')';
                         ctx.lineWidth = 1;
                         ctx.beginPath();
                         ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
@@ -139,19 +145,18 @@ const HomePage = () => {
     }, []);
     return(
         <div className="home-wrapper">
-            <div className='home-intro'>
             <canvas id='main-canvas' ref={mainCanvas}>
             </canvas> 
-            </div>
-            <div className="place-holder">
-            </div>
             <div className='home-container'>
+                <table>
+                    <tr>
+                        <td><h1 className='title-name'>ALI GHOSN</h1></td>
+                    </tr>
+                    <tr>
+                        <td><img className='home-page-image' src={homepageImage}/></td>
+                    </tr>
+                </table>
             </div>
-            <h1>TEZT</h1>
-            <h1>TEZT</h1>
-            <h1>TEZT</h1>
-            <h1>TEZT</h1>
-            <h1>TEZT</h1>
         </div>
     )
 }
