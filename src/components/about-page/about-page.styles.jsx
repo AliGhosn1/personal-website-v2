@@ -32,7 +32,7 @@ export const AboutPageTitle = styled.h1`
 `
 
 export const AboutPageInformation = styled.p`
-    font-size: 2.5vh;
+    font-size: 1.3vw;
 `
 
 export const AboutPagePicture = styled.img`
