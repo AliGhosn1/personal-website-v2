@@ -78,6 +78,7 @@ export const ProjectDescription = styled.p`
     overflow-y: auto;
     height: 65%;
     cursor: default;
+    font-size: 1.6vh;
 `
 
 export const ProjectTechnologies = styled.div`
@@ -95,6 +96,7 @@ export const ProjectTechnology = styled.p`
     cursor: default;
     min-width: 15px;
     text-align: center;
+    font-size: 1.6vh;
 `
 
 export const GitHubLogo = styled(GitHubIcon)`
