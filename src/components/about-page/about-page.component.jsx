@@ -1,5 +1,5 @@
 import { AboutPageWrapper, AboutPageTable, AboutPageTitle, AboutPageInformation, AboutPagePicture, AboutPageContent, AboutPageText, ResumeButton, SkillsSection, 
-         SkillsContainer } from "./about-page.styles";
+         SkillsContainer, ImportantWord } from "./about-page.styles";
 import SkillCard from "../skill-card/skill-card.component";
 
 import PFP from '../../assets/personal-picture.png'
@@ -41,10 +41,10 @@ const AboutPage = () => {
                         </td>
                         <td>
                             <AboutPageContent>
+                                <AboutPageTitle>WHO AM I</AboutPageTitle>
                                 <AboutPageText>
-                                    <AboutPageTitle>WHO AM I</AboutPageTitle>
                                     <AboutPageInformation>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet ac arcu a sollicitudin. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas sodales cursus velit eu scelerisque. Aenean in tempus ante. Mauris consequat ac mauris eu sodales. <br /><br /> Duis quis mi et neque ultricies elementum. Morbi suscipit nulla neque, et porta mi commodo accumsan. Sed vulputate eros a enim euismod, sit amet semper tortor pharetra. Fusce et vestibulum velit. Etiam hendrerit feugiat tellus at varius. Fusce ultrices neque a justo auctor pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                                    Hi, I’m <ImportantWord>Ali!</ImportantWord> I am passionate about all things software development and <ImportantWord>solving problems.</ImportantWord> I am currently pursuing my <ImportantWord>Bachelor of Computer Science</ImportantWord> at the University of Windsor along with challenging myself with <ImportantWord>independent learning</ImportantWord> and <ImportantWord>side projects.</ImportantWord><br /><br />Most of my software development experience comes from working with <ImportantWord>full-stack</ImportantWord> applications but I am also very familiar with <ImportantWord>python</ImportantWord>, <ImportantWord>java</ImportantWord>, and <ImportantWord>C</ImportantWord> in non-web situations. <br /><br />Click the button below to download my <ImportantWord>resume</ImportantWord>.
                                     </AboutPageInformation>
                                 </AboutPageText>
                                 <ResumeButton href={Resume} download>Download My Resumé</ResumeButton>

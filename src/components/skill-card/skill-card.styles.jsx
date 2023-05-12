@@ -13,6 +13,7 @@ export const SkillTitle = styled.h1`
     letter-spacing: 3px;
     font-size: 35px;
     margin-top: 0;
+    font-style: italic;
 `
 
 export const BulletWrapper = styled.div`

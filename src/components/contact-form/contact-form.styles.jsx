@@ -29,6 +29,7 @@ export const FormTitle = styled.div`
     color: rgb(12, 235, 179);
     font-size: 70px;
     cursor: default;
+    font-family: 'Lora', serif;
   
   &:after {
     content: '';
@@ -48,6 +49,7 @@ export const FormContactInfo = styled.div`
     color: white;
     cursor: default;
     opacity: 0.7;
+    font-family: 'ABeeZee', sans-serif;
 `
 
 export const FormGroup = styled.div`

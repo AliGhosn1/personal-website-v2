@@ -19,9 +19,12 @@ export const AboutPageContent = styled.div`
 `
 
 export const AboutPageText = styled.div`
+    overflow-y: scroll;
+    margin: auto;
 `
 
 export const AboutPageTitle = styled.h1`
+    font-family: 'Lora', serif;
     color: rgb(12, 235, 179);
     margin-bottom: 3vh;
     margin-top: 0;
@@ -37,7 +40,8 @@ export const AboutPagePicture = styled.img`
 `
 
 export const ResumeButton = styled.a`
-    margin: auto 0;
+    margin: 0 0;
+    margin-top: 3vh;
     width: max-content;
     cursor: pointer;
     border-radius: 4px;
@@ -80,4 +84,9 @@ export const SkillsContainer = styled.div`
     display: flex;
     justify-content: space-between;
     height: 50vh;
+`
+
+export const ImportantWord = styled.span`
+    color: rgb(12, 235, 179);
+    text-transform: capitalize;
 `

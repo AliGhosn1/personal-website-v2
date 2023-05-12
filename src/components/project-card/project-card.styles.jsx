@@ -45,7 +45,7 @@ export const ProjectCardInnerContainer = styled.div`
 
 export const ProjectCardContent = styled.div`
     padding: 5%;
-    height: 82%;
+    height: 80%;
 `
 
 export const ProjectCardFront = styled.div`

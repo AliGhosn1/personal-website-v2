@@ -16,6 +16,7 @@ export const FilterButtonBar = styled.div`
 `
 
 export const FilterButton = styled.div`
+    font-family: 'Lora', serif;
     color: white;
     ${FilterButtonDefault}
 `
