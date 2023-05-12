@@ -96,7 +96,7 @@ export const ProjectTechnology = styled.p`
     cursor: default;
     min-width: 15px;
     text-align: center;
-    font-size: 1.6vh;
+    font-size: 1.5vh;
 `
 
 export const GitHubLogo = styled(GitHubIcon)`

@@ -13,7 +13,7 @@ export const AboutPageTable = styled.table`
 export const AboutPageContent = styled.div`
     margin: 0 5vw;
     display: flex;
-    height: 65vh;
+    height: 67vh;
     flex-direction: column;
     justify-content: space-between;
 `
@@ -32,7 +32,7 @@ export const AboutPageTitle = styled.h1`
 `
 
 export const AboutPageInformation = styled.p`
-    font-size: 2.6vh;
+    font-size: 2.5vh;
 `
 
 export const AboutPagePicture = styled.img`
