@@ -12,7 +12,7 @@ const NavigationBar = () => {
         {linkPath: '/', title: 'HOME'},
         {linkPath: '/projects', title: 'PROJECTS'},
         {linkPath: '/about', title: 'ABOUT ME'},
-        {linkPath: '/resume', title: 'RESUME'},
+        //{linkPath: '/resume', title: 'RESUME'},
         {linkPath: '/contact', title: 'CONTACT ME'},
     ]
 
@@ -27,7 +27,7 @@ const NavigationBar = () => {
         const handleScroll = () => {
             const position = window.pageYOffset;
     
-            if(position <= vh(15)){
+            if(position <= 50){
                 setDisplayNavBar(true);
             }
     
@@ -37,9 +37,8 @@ const NavigationBar = () => {
         };
     
         const handleMouseMove = ({clientX, clientY}) => {
-            const distanceFromTop = clientY-window.pageYOffset;
-    
-            if(vh(distanceFromTop) <= 0.2){
+            const distanceFromTop = clientY/window.innerHeight;
+            if(distanceFromTop <= 0.2){
                 setDisplayNavBar(true);
             }
     

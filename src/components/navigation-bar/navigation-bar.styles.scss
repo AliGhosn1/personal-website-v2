@@ -10,6 +10,7 @@
     box-shadow: 0 4px 2px -2px rgb(30, 31, 38, 0.6);
     overflow: hidden;
     transition: height 0.1s ease-in;
+    z-index: 5;
 
     .nav-bar-logo-container{
         height: 90%;

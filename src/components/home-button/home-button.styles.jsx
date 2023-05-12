@@ -9,6 +9,7 @@ const defaultButtonCss = css`
     display: inline-block;
     font-weight: bold;
     padding: .5em;
+    padding-right: 0;
     margin-left: -.5em;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -47,27 +48,14 @@ const defaultButtonCss = css`
         transform: translateX(0);
         border-color: rgb(12, 235, 179);
     }
-    
-    // display: block;
-    // padding: 10px;
-    // border-radius: 10px;
-    // text-decoration: none;
-    // font-size: 60px;
-    // color: rgb(255, 50, 10);
-    // transition: all 0.5s ease-in-out; 
-
-    // &:hover{
-    //     transition: all 0.5s ease-in-out; 
-    //     color: rgb(12, 235, 179);
-    // }
 `
 
 export const HomePageButtonLeft = styled(Link)`
     ${defaultButtonCss}
-    margin: 0 5% 0 10%;
+    margin: 0 5% 0 30%;
 `
 
 export const HomePageButtonRight = styled(Link)`
     ${defaultButtonCss}
-    margin: 0 10% 0 5%;
+    margin: 0 30% 0 5%;
 `

@@ -20,14 +20,14 @@
         }
     
         .link-hover{
-            color: #21a987;
+            color: rgb(12, 235, 179);
             transform: translateY(-10px);
             border-bottom: 3px solid white;
             transition: all 0.3s ease-in-out
         }
 
         .active-link{
-            color: #21a987;
+            color: rgb(12, 235, 179);
             cursor: default;
         }
     }

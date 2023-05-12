@@ -25,9 +25,9 @@
               transition: transform 0.2s cubic-bezier(0.12, 0.8, 0.57, 1) 0.42s;
               
               &:after {
-                top: 62%;
+                top: 61%;
                 transform-origin: left top;
-                transform: rotateZ(-2.9deg) scaleX(100%);
+                transform: rotateZ(-2deg) scaleX(100%);
               }
             }
 
@@ -39,7 +39,7 @@
               &:after {
                 top: 65%;
                 transform-origin: left top;
-                transform: rotateZ(-3.6deg) scaleX(100%);
+                transform: rotateZ(-2.4deg) scaleX(100%);
               }
             }
           }

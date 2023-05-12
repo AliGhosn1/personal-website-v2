@@ -154,8 +154,8 @@ const HomePage = () => {
                         <tr>
                             <td colSpan={2}>
                             <h1 className="link">
-                                <span className="link--top">Ali Ghosn</span>
-                                <span className="link--bottom">Ali Ghosn</span>
+                                <span className="link--top"> &lt;Ali Ghosn /&gt;</span>
+                                <span className="link--bottom"> &lt;Ali Ghosn /&gt;</span>
                             </h1>
                             </td>
                         </tr>

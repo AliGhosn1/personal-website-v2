@@ -25,3 +25,11 @@ export const FilterButtonActive = styled.div`
     ${FilterButtonDefault}
 `
 
+export const ProjectContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 38px;
+    row-gap: 50px;
+    margin: 0 10vw;
+`
+
