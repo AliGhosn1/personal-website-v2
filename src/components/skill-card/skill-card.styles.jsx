@@ -11,7 +11,7 @@ export const SkillTitle = styled.h1`
     text-align: center;
     color: rgb(12, 235, 179);
     letter-spacing: 3px;
-    font-size: 35px;
+    font-size: 2vw;
     margin-top: 0;
     font-style: italic;
 `
@@ -19,6 +19,7 @@ export const SkillTitle = styled.h1`
 export const BulletWrapper = styled.div`
     margin-left: 10%;
     text-transform: uppercase;
+    font-size: 0.8vw;
 `
 
 export const SkillImageContainer = styled.div`
