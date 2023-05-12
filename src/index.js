@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -9,11 +9,11 @@ import { NavContextProvider } from './contexts/navigation-bar.context';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <Router>
       <NavContextProvider>
         <App />
       </NavContextProvider>
-    </BrowserRouter>
+    </Router>
   </React.StrictMode>
 );
 
