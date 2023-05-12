@@ -75,7 +75,7 @@ export const ProjectTitle = styled.h1`
 
 export const ProjectDescription = styled.p`
     overflow-y: auto;
-    max-height: 65%;
+    height: 65%;
     cursor: default;
 `
 

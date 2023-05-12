@@ -43,7 +43,7 @@ export const FormTitle = styled.div`
 `
 
 export const FormContactInfo = styled.div`
-    margin-top: auto;
+    margin-top: 5vh;
     font-size: 20px;
     color: white;
     cursor: default;

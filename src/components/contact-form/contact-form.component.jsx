@@ -1,9 +1,34 @@
-import { useState, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import emailjs from 'emailjs-com';
+
+import Check from '../../assets/check.mp3';
 
 import { FormWrapper, FormBodyItemLeft, FormTitle, FormContactInfo, FormBodyItem, FormGroup, FormControl, FormMessage, FormButton } from "./contact-form.styles";
 
+const useAudio = url => {
+    const [audio] = useState(new Audio(url));
+    const [playing, setPlaying] = useState(false);
+  
+    const toggle = () => setPlaying(!playing);
+  
+    useEffect(() => {
+        playing ? audio.play() : audio.pause();
+      },
+      [playing]
+    );
+  
+    useEffect(() => {
+      audio.addEventListener('ended', () => setPlaying(false));
+      return () => {
+        audio.removeEventListener('ended', () => setPlaying(false));
+      };
+    }, []);
+  
+    return [playing, toggle];
+};
+
 const ContactForm = () => {
+    const [playing, toggle] = useAudio(Check);
 
     const form = useRef();
 
@@ -23,12 +48,8 @@ const ContactForm = () => {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        emailjs.sendForm('service_df87cnf', 'template_kpwyjqe', form.current, 'oiJto1aZJ4v5J0bwe')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
+        emailjs.sendForm('service_df87cnf', 'template_kpwyjqe', form.current, 'oiJto1aZJ4v5J0bwe');
+        toggle();
         setFormFields(defaultFormFields);
     }
 
@@ -39,7 +60,7 @@ const ContactForm = () => {
                     <span>CONTACT</span>
                     <span>ME</span>
                 </FormTitle>
-                <FormContactInfo>Email: ghosn2@uwindsor.ca</FormContactInfo>
+                <FormContactInfo>ghosn2@uwindsor.ca</FormContactInfo>
                 </FormBodyItemLeft>
                 <FormBodyItem>
                     <div>
