@@ -13,7 +13,7 @@ const BasicProjectStyles = css`
 export const ProjectCardContainer = styled.div`
     background-color: transparent;
     width: 100%;
-    height: 275px;
+    height: 28vh;
     border: 1px solid rgb(12, 235, 179);
     perspective: 1000px;
 
@@ -68,6 +68,7 @@ export const ProjectImageHolder = styled.img`
 `
 
 export const ProjectTitle = styled.h1`
+    font-size: 3vh;
     margin: 0;
     padding: 0;
     cursor: default;
