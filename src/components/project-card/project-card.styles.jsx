@@ -68,10 +68,13 @@ export const ProjectImageHolder = styled.img`
 `
 
 export const ProjectTitle = styled.h1`
-    font-size: 3vh;
+    font-size: 1.6vw;
     margin: 0;
     padding: 0;
     cursor: default;
+    @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+        font-size: 5.5vw;
+    }
 `
 
 export const ProjectDescription = styled.p`
@@ -97,6 +100,9 @@ export const ProjectTechnology = styled.p`
     min-width: 15px;
     text-align: center;
     font-size: 0.8vw;
+    @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+        font-size: 3vw;
+    }
 `
 
 export const GitHubLogo = styled(GitHubIcon)`

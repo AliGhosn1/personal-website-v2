@@ -6,13 +6,21 @@ export const FormWrapper = styled.form`
     display: flex;
     min-height: 75vh;
     margin: 5vh 10vw;
+    @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+        flex-direction: column;
+        margin: 1vh 10vw;
+        padding: 0;
+        min-height: 50vh;
+    }
 `
 
 export const FormBodyItem = styled.div`
     flex: 1;
     padding: 50px;
-
-
+    @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+        padding: 10px;
+    }
+    
 `
 
 export const FormBodyItemLeft = styled.div`
@@ -20,6 +28,10 @@ export const FormBodyItemLeft = styled.div`
     padding: 50px;
     display: flex;
     flex-direction: column;
+    @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+        padding: 10px;
+        padding-bottom: 5vh;
+    }
 `
 
 export const FormTitle = styled.div`
@@ -30,6 +42,9 @@ export const FormTitle = styled.div`
     font-size: 70px;
     cursor: default;
     font-family: 'Lora', serif;
+    @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+        font-size: 14vw;
+    }
   
   &:after {
     content: '';
@@ -40,6 +55,9 @@ export const FormTitle = styled.div`
     width: 110px;
     height: 4px;
     background: white;
+    @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+        width: 90px;
+    }
   }
 `
 
@@ -50,6 +68,9 @@ export const FormContactInfo = styled.div`
     cursor: default;
     opacity: 0.7;
     font-family: 'ABeeZee', sans-serif;
+    @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+        display: none;
+    }
 `
 
 export const FormGroup = styled.div`
@@ -76,6 +97,10 @@ export const FormControl = styled.input`
     text-transform: uppercase;
     outline: none;
     transition: border-color .2s;
+
+    @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+        font-size: 15px;
+    }
 
     &::placeholder {
         color: #666;
@@ -108,34 +133,34 @@ export const FormMessage = styled.textarea`
 `
 
 export const FormButton = styled.button`
-margin: auto 0;
-width: max-content;
-cursor: pointer;
-border-radius: 4px;
-text-decoration: none;
-padding: 12px 18px;
-font-size: 12px;
-line-height: 19px;
-text-transform: uppercase;
-font-family: 'Montserrat', sans-serif; font-weight:400;
-letter-spacing: 3px;
-border: 1px solid white;
-background: transparent;
-color: #fff !important;
--webkit-transition: all .4s ease-in-out;
-   -moz-transition: all .4s ease-in-out;
-    -ms-transition: all .4s ease-in-out;
-     -o-transition: all .4s ease-in-out;
-        transition: all .4s ease-in-out;
-
-&:hover{
-    border-color: rgb(12, 235, 179);
-    color: rgb(12, 235, 179); !important;
+    margin: auto 0;
+    width: max-content;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 12px;
+    line-height: 19px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; font-weight:400;
+    letter-spacing: 3px;
+    border: 1px solid white;
+    background: transparent;
+    color: #fff !important;
     -webkit-transition: all .4s ease-in-out;
-   -moz-transition: all .4s ease-in-out;
-    -ms-transition: all .4s ease-in-out;
-     -o-transition: all .4s ease-in-out;
-        transition: all .4s ease-in-out;
-}
+    -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+
+    &:hover{
+        border-color: rgb(12, 235, 179);
+        color: rgb(12, 235, 179); !important;
+        -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+    }
 `
 

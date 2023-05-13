@@ -3,6 +3,9 @@ import  styled  from "styled-components";
 export const AboutPageWrapper = styled.div`
     margin: 0 15vw;
     height: 85vh;
+    @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+        margin: 0 5vw;
+    }
 `
 
 export const AboutPageTable = styled.table`
@@ -16,6 +19,9 @@ export const AboutPageContent = styled.div`
     height: 67vh;
     flex-direction: column;
     justify-content: space-between;
+    @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+        height: 70vh;
+    }
 `
 
 export const AboutPageText = styled.div`
@@ -29,14 +35,23 @@ export const AboutPageTitle = styled.h1`
     margin-bottom: 3vh;
     margin-top: 0;
     letter-spacing: 3px;
+    @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+        font-size: 10.5vw;
+    }
 `
 
 export const AboutPageInformation = styled.p`
     font-size: 1.3vw;
+    @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+        font-size: 4vw;
+    }
 `
 
 export const AboutPagePicture = styled.img`
     border-radius: 10px;
+    @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+        display: none;
+    }
 `
 
 export const ResumeButton = styled.a`
@@ -78,12 +93,19 @@ export const SkillsSection = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+        padding: 3vh 6vw;
+    }
 `
 
 export const SkillsContainer = styled.div`
     display: flex;
     justify-content: space-between;
     height: 50vh;
+    @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 
 export const ImportantWord = styled.span`

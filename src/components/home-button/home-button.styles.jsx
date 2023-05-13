@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const defaultButtonCss = css`
     color: rgb(255, 50, 10);
-    font-size: 55px;
+    font-size: 3vw;
     text-decoration: none;
     margin-top: 1em;
     display: inline-block;

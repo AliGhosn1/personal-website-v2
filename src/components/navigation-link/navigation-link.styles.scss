@@ -4,6 +4,9 @@
     display: flex;
     align-items:last baseline;
     justify-content: center;
+    @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+        flex-direction: column;
+    }
 
     .link-wrapper{
         text-decoration: none;
@@ -17,6 +20,9 @@
             padding: 0 25px;
             padding-bottom: 10px;
             align-items: baseline;
+            @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+                font-size: 30px;
+            }
         }
     
         .link-hover{

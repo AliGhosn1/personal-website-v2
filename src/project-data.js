@@ -131,7 +131,7 @@ export const PROJECT_DATA = [
     {
         name: 'Dice Game',
         filters: ['Front-End'],
-        description: <div>This basic HTML/CSS/JS simple dice game generates random results to provide an interactive user experience.</div>,
+        description: <div>This basic HTML/CSS/JS dice game generates random results to provide an interactive user experience.</div>,
         technologies: ['HTML', 'CSS', 'Javascript'],
         github: 'https://github.com/AliGhosn1/Dice-Game',
         liveLink: null,

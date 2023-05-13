@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
 export const MediaBarWrapper = styled.div`
+    @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+        display: none;
+    }
     position: fixed;
     bottom: 3vh;
     margin-left: 3vw;
