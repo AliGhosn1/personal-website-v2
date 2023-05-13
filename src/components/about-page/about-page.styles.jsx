@@ -20,7 +20,7 @@ export const AboutPageContent = styled.div`
     flex-direction: column;
     justify-content: space-between;
     @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-        height: 70vh;
+        height: 75vh;
     }
 `
 
@@ -43,7 +43,7 @@ export const AboutPageTitle = styled.h1`
 export const AboutPageInformation = styled.p`
     font-size: 1.3vw;
     @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-        font-size: 4vw;
+        font-size: 3.9vw;
     }
 `
 

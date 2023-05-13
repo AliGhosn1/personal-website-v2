@@ -110,6 +110,11 @@ export const GitHubLogo = styled(GitHubIcon)`
     right: 0;
     top: -3px;
     transform: scale(0.38, 0.38);
+    @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+        transform: scale(0.25);
+        right: -5px;
+        top: -15px;
+    }
 `
 
 export const LiveLinkLogo = styled.img`
@@ -117,4 +122,9 @@ export const LiveLinkLogo = styled.img`
     right: 80px;
     top: 29px;
     //transform: scale(0.9, 0.9);
+    @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+        transform: scale(0.65);
+        right: 65px;
+        top: 17px;
+    }
 `

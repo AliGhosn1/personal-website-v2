@@ -29,7 +29,7 @@ export const BulletWrapper = styled.div`
     text-transform: uppercase;
     font-size: 0.8vw;
     @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-        font-size: 5vw;
+        font-size: 4.6vw;
     }
 `
 
