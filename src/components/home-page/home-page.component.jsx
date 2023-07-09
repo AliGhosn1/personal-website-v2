@@ -91,8 +91,8 @@ const HomePage = () => {
                 let size = (Math.random() * 2) + 1;
                 let x = (Math.random() * ((window.innerWidth - size * 2) - (size * 2)) + size * 2);
                 let y = (Math.random() * ((window.innerHeight - size * 2) - (size * 2)) + size * 2);
-                let directionX = (Math.random() * 2) - 1;
-                let directionY = (Math.random() * 2) - 1;
+                let directionX = (Math.random() * 1) - 0.5;
+                let directionY = (Math.random() * 1 ) - 0.5;
                 let color = '#8C5523';
                 let lineColor = colours[Math.floor(Math.random() * 2)];
 

@@ -32,6 +32,9 @@ export const MediaImagesContainer = styled.div`
     width: 44px;
     transition: all 0.3s ease-in-out;
     text-align: center;
+    padding-bottom: 10px;
+
+    
 `
 
 export const MediaImage = styled.img`

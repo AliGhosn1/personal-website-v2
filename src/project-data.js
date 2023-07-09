@@ -16,6 +16,7 @@ import BMI from './assets/projects/BMI.png'
 import Simon from './assets/projects/Simon.png'
 import Todo from './assets/projects/Todo.png'
 import Paint from './assets/projects/Paint.png'
+import RentRight from './assets/projects/Rentright.png'
 
 export const PROJECT_DATA = [
     {
@@ -197,5 +198,15 @@ export const PROJECT_DATA = [
         liveLink: null,
         imageSrc: Paint,
         priority: 3
+    },
+    {
+        name: 'Rent Right',
+        filters: ['Front-End', 'Back-End'],
+        description: <div>The project involved developing a property management website that aimed to streamline property management tasks. The website had comprehensive CRUD (Create, Read, Update, Delete) functionality, allowing users to efficiently manage properties.</div>,
+        technologies: ['MERN Stack', 'Typescript', 'Refine', 'Github'],
+        github: 'https://github.com/AliGhosn1/RentRight-Front-End',
+        liveLink: 'https://rentrightt.netlify.app/',
+        imageSrc: RentRight,
+        priority: 10
     },
 ]
